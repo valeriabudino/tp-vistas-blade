@@ -4,11 +4,15 @@
 
 @section('content')
 <div class="card">
-    <h2>Contacto</h2>
-    <p>Puede comunicarse con nosotros mediante el siguiente correo:</p>
+    <h2><i class="fa-solid fa-envelope"></i> Contacto</h2>
+    <p>Comunicate con nosotros ante cualquier consulta.</p>
     @isset($email)
-    <p><strong>Email:</strong> {{ $email }}</p>
+    <p><strong><i class="fa-solid fa-envelope"></i> Email:</strong> {{ $email }}</p>
     @endisset
+    <p><strong><i class="fa-solid fa-phone"></i> Teléfono:</strong> (011) 1234-5678</p>
+    <p><strong><i class="fa-solid fa-location-dot"></i> Dirección:</strong> Av. Siempre Viva 123, CABA</p>
+    <hr style="margin: 20px 0;">
+    <h3>Dejanos tu mensaje</h3>
     <form>
         <div class="form-group">
             <label>Nombre:</label>

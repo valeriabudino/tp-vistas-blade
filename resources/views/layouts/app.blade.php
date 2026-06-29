@@ -9,10 +9,13 @@
 </head>
 <body>
     <header class="header">
-        <h1><i class="fa-solid fa-paw"></i> Sistema de Mascotas</h1>
+        <h1><i class="fa-solid fa-paw"></i> Veterinaria Patitas</h1>
         <nav>
             <a href="{{ route('pets.index') }}"><i class="fa-solid fa-list"></i> Listado</a>
             <a href="{{ route('pets.create') }}"><i class="fa-solid fa-plus"></i> Nueva Mascota</a>
+            <a href="/productos"><i class="fa-solid fa-bag-shopping"></i> Productos</a>
+            <a href="/contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            <a href="/nosotros"><i class="fa-solid fa-info-circle"></i> Nosotros</a>
         </nav>
     </header>
     <main class="container">

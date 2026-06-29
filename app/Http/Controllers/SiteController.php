@@ -19,7 +19,7 @@ class SiteController extends Controller
     }
     public function contacto()
     {
-        $email = 'contacto@miempresa.com';
+        $email = 'contacto@veterinariapatitas.com';
         $provincias = $this->provincias();
         return view('contacto', compact('email', 'provincias'));
     }
