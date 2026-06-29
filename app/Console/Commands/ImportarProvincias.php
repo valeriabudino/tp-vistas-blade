@@ -13,7 +13,7 @@ guarda en la base de datos';
  {
  $this->info('Importando provincias...');
  $response =
-Http::get('https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre');
+Http::get('https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre'); // cliente http de laravel 
  if ($response->successful()) {
  $provincias = $response->json()['provincias'];
  foreach ($provincias as $provincia) {
