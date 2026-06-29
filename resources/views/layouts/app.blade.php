@@ -22,7 +22,7 @@
         @yield('content')
     </main>
     <footer class="footer">
-        Programación III - Laravel 13
+        Programación III - 2026
     </footer>
 </body>
 </html>
