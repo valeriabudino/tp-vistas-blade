@@ -1,6 +1,8 @@
 @extends('layouts.app')
-@section('titulo', 'Welcome')
-@section('contenido')
+
+@section('title', 'Inicio')
+
+@section('content')
 <h2>Página de inicio</h2>
 <p>Bienvenido a nuestra primera aplicación con Laravel y Blade.</p>
 <p>Esta página usa un layout general para no repetir código HTML.</p>
