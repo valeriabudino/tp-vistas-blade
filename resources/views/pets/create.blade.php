@@ -1,31 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <title>Nueva Mascota</title>
-</head>
+@section('title', 'Registrar Mascota')
 
-<body>
-    <h1>Registrar Nueva Mascota</h1>
+@section('content')
+<div class="card">
+    <h2><i class="fa-solid fa-plus"></i> Registrar Nueva Mascota</h2>
     <form action="{{ route('pets.store') }}" method="POST">
         @csrf
-        <div>
+        <div class="form-group">
             <label>Nombre:</label>
             <input type="text" name="name" required>
-        </div><br>
-        <div>
-            <label>Especie (Ej. Perro, Gato):</label>
+        </div>
+        <div class="form-group">
+            <label>Especie:</label>
             <input type="text" name="species" required>
-        </div><br>
-        <div>
-            <label>Edad (años):</label>
+        </div>
+        <div class="form-group">
+            <label>Edad:</label>
             <input type="number" name="age" required>
-        </div><br>
-        <button type="submit">Guardar Mascota</button>
+        </div>
+        <button type="submit" class="btn"><i class="fa-solid fa-floppy-disk"></i> Guardar Mascota</button>
+        <a href="{{ route('pets.index') }}" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Volver</a>
     </form>
-    <br>
-    <a href="{{ route('pets.index') }}">Volver a la lista</a>
-</body>
-
-</html>
+</div>
+@endsection
