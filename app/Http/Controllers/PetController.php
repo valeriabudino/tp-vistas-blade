@@ -16,7 +16,7 @@ class PetController extends Controller
             $query->where('name', 'LIKE', '%' . $request->buscar . '%')
                    ->orWhere('species', 'LIKE', '%' . $request->buscar . '%');
         }
-        $pets = $query->latest()->paginate(5)->appends($request->query());
+        $pets = $query->latest()->paginate(5)->appends($request->except('page'));
         return view('pets.index', compact('pets'));
     }
     // Método para mostrar el formulario de creación
