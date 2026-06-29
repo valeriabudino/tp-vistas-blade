@@ -15,6 +15,7 @@
 @if($producto['stock'] > 0)
 <p class="con-stock">Stock disponible: {{ $producto['stock']
 }}</p>
+<livewire:contador />
 @if($producto['precio'] > 3000)
 <p>Producto destacado</p>
 @endif
